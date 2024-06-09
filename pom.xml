@@ -86,6 +86,25 @@
                                     <version>${jaxb.version}</version>
                                 </plugin>
                             </plugins>
+                            <extension>true</extension>
+                            <args>
+                                <arg>-XtoString</arg>
+                                <arg>-Xequals</arg>
+                                <arg>-XhashCode</arg>
+                                <arg>-Xcopyable</arg>
+                                <!--<arg>-Xinheritance</arg>
+                                <arg>-XautoInheritance</arg>-->
+                                <!--                                <arg>-XenumValue</arg>-->
+                            </args>
+                            <markGenerated>true</markGenerated>
+                            <schemaDirectory>src/main/resources/schemas</schemaDirectory>
+                            <schemaIncludes>
+                                <include>DTE_v10.xsd</include>
+                                <include>EnvioDTE_v10.xsd</include>
+                                <include>SiiTypes_v10.xsd</include>
+                                <!--                                <include>xmldsignature_v10.xsd</include>-->
+                            </schemaIncludes>
+                            <locale>es</locale>
                         </configuration>
                     </execution>
                 </executions>
