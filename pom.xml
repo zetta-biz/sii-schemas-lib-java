@@ -13,6 +13,9 @@
         <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jaxb.version>3.0.1</jaxb.version>
+        <!-- Based on https://projects.eclipse.org/releases/jakarta-ee-9 -->
+        <jakarta.xml.bind-api.version>3.0.0</jakarta.xml.bind-api.version>
+        <jakarta.annotation.version>2.0.0</jakarta.annotation.version>
     </properties>
 
     <dependencyManagement>
@@ -34,10 +37,15 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>jakarta.platform</groupId>
-            <artifactId>jakarta.jakartaee-api</artifactId>
-            <version>9.0.0</version>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+            <version>${jakarta.xml.bind-api.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.annotation</groupId>
+            <artifactId>jakarta.annotation-api</artifactId>
+            <version>${jakarta.annotation.version}</version>
         </dependency>
         <dependency>
             <groupId>org.jvnet.jaxb</groupId>
