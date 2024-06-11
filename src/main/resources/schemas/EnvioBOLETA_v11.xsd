@@ -1258,7 +1258,7 @@
 		</xs:sequence>
 		<xs:attribute name="version" type="xs:decimal" use="required" fixed="1.0"/>
 	</xs:complexType>
-	<xs:simpleType name="RUTType">
+	<!--<xs:simpleType name="RUTType">
 		<xs:annotation>
 			<xs:documentation>Rol Unico Tributario (99..99-X)</xs:documentation>
 		</xs:annotation>
@@ -1267,8 +1267,8 @@
 			<xs:minLength value="3"/>
 			<xs:pattern value="[0-9]+-([0-9]|K)"/>
 		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="DTEType">
+	</xs:simpleType>-->
+	<!--<xs:simpleType name="DTEType">
 		<xs:annotation>
 			<xs:documentation>Tipos de Documentos Tributarios Electronicos</xs:documentation>
 		</xs:annotation>
@@ -1284,39 +1284,39 @@
 				</xs:annotation>
 			</xs:enumeration>
 		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="MntImpType">
+	</xs:simpleType>-->
+	<!--<xs:simpleType name="MntImpType">
 		<xs:annotation>
 			<xs:documentation>Monto de Impuesto - 18 digitos</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:positiveInteger">
 			<xs:totalDigits value="18"/>
 		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="MontoType">
+	</xs:simpleType>-->
+	<!--<xs:simpleType name="MontoType">
 		<xs:annotation>
 			<xs:documentation>Monto de 18 digitos - Incluye el cero</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:nonNegativeInteger">
 			<xs:totalDigits value="18"/>
 		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="ValorType">
+	</xs:simpleType>-->
+	<!--<xs:simpleType name="ValorType">
 		<xs:annotation>
 			<xs:documentation>Monto de 18 digitos - Positivo o Negativo</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:integer">
 			<xs:totalDigits value="18"/>
 		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="FolioType">
+	</xs:simpleType>-->
+	<!--<xs:simpleType name="FolioType">
 		<xs:annotation>
 			<xs:documentation>Folio de DTE - 10 digitos</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:positiveInteger">
 			<xs:totalDigits value="10"/>
 		</xs:restriction>
-	</xs:simpleType>
+	</xs:simpleType>-->
 	<xs:simpleType name="Dec1Type">
 		<xs:annotation>
 			<xs:documentation>Monto con 16 Digitos de Cuerpo y 2 Decimales </xs:documentation>
@@ -1339,7 +1339,7 @@
 			<xs:maxInclusive value="999999999999.999999"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="PctType">
+	<!--<xs:simpleType name="PctType">
 		<xs:annotation>
 			<xs:documentation>Monto de Porcentaje ( 3 y 2)</xs:documentation>
 		</xs:annotation>
@@ -1349,5 +1349,5 @@
 			<xs:minInclusive value="0.00"/>
 			<xs:maxInclusive value="100.00"/>
 		</xs:restriction>
-	</xs:simpleType>
+	</xs:simpleType>-->
 </xs:schema>

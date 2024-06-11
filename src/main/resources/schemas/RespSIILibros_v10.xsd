@@ -38,7 +38,7 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<xs:simpleType name="RUTType">
+	<!--<xs:simpleType name="RUTType">
 		<xs:annotation>
 			<xs:documentation>Rol Unico Tributario (99..99-X)</xs:documentation>
 		</xs:annotation>
@@ -47,10 +47,10 @@
 			<xs:minLength value="3"/>
 			<xs:pattern value="[0-9]+-([0-9]|K)"/>
 		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="EnteroType">
+	</xs:simpleType>-->
+	<!--<xs:simpleType name="EnteroType">
 		<xs:restriction base="xs:nonNegativeInteger">
 			<xs:totalDigits value="10"/>
 		</xs:restriction>
-	</xs:simpleType>
+	</xs:simpleType>-->
 </xs:schema>
