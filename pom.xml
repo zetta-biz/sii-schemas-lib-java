@@ -86,6 +86,21 @@
                                     <version>${jaxb.version}</version>
                                 </plugin>
                             </plugins>
+                            <extension>true</extension>
+                            <args>
+                                <arg>-XtoString</arg>
+                                <arg>-Xequals</arg>
+                                <arg>-XhashCode</arg>
+                                <arg>-Xcopyable</arg>
+                            </args>
+                            <markGenerated>true</markGenerated>
+                            <schemaIncludes>
+                                <include>schemas.xsd</include>
+                            </schemaIncludes>
+                            <bindingIncludes>
+                                <include>bindings/bindings.xjb</include>
+                            </bindingIncludes>
+                            <locale>es</locale>
                         </configuration>
                     </execution>
                 </executions>

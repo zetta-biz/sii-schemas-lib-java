@@ -1,0 +1,36 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- Documentos Tributarios Electrónicos -->
+    <xs:import namespace="http://www.sii.cl/SiiDte" schemaLocation="schemas/DTE_v10.xsd"/>
+    <xs:import namespace="http://www.sii.cl/SiiDte" schemaLocation="schemas/EnvioDTE_v10.xsd"/>
+    <xs:import namespace="http://www.sii.cl/SiiDte" schemaLocation="schemas/SiiTypes_v10.xsd"/>
+    <xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="schemas/xmldsignature_v10.xsd"/>
+
+    <!-- Información Electrónica de Compras y Ventas -->
+    <xs:import namespace="http://www.sii.cl/SiiLce" schemaLocation="schemas/LceCal_v10.xsd"/>
+    <xs:import namespace="http://www.sii.cl/SiiLce" schemaLocation="schemas/LceCoCertif_v10.xsd"/>
+    <xs:import namespace="http://www.sii.cl/SiiLce" schemaLocation="schemas/LceSiiTypes_v10.xsd"/>
+    <xs:import namespace="http://www.sii.cl/SiiDte" schemaLocation="schemas/LibroCV_v10.xsd"/>
+
+    <!-- Libro de Guías de Despacho Electrónicas -->
+    <xs:import namespace="http://www.sii.cl/SiiDte" schemaLocation="schemas/LibroGuia_v10.xsd"/>
+
+    <!-- Intercambio entre Contribuyentes -->
+    <xs:import namespace="http://www.sii.cl/SiiDte" schemaLocation="schemas/RespuestaEnvioDTE_v10.xsd"/>
+
+    <!-- Recibo de las Mercaderías o Servicios prestados, según Ley 19.983 -->
+    <xs:import namespace="http://www.sii.cl/SiiDte" schemaLocation="schemas/EnvioRecibos_v10.xsd"/>
+    <xs:import namespace="http://www.sii.cl/SiiDte" schemaLocation="schemas/Recibos_v10.xsd"/>
+
+    <!-- Respuesta SII a Envíos Automáticos -->
+    <xs:import namespace="" schemaLocation="schemas/RespSII_v10.xsd"/>
+    <xs:import namespace="" schemaLocation="schemas/RespSIILibros_v10.xsd"/>
+
+    <!-- Boletas Electrónicas -->
+    <xs:import namespace="http://www.sii.cl/SiiDte" schemaLocation="schemas/EnvioBOLETA_v11.xsd"/>
+
+    <!-- Libro de Boletas Electrónicas -->
+    <xs:import namespace="http://www.sii.cl/SiiDte" schemaLocation="schemas/LibroBOLETA_v10.xsd"/>
+
+    <!-- Archivo de Consumo de Folios -->
+    <xs:import namespace="http://www.sii.cl/SiiDte" schemaLocation="schemas/ConsumoFolio_v10.xsd"/>
+</xs:schema>

@@ -1,0 +1,7 @@
+<bindings xmlns="https://jakarta.ee/xml/ns/jaxb" version="3.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <bindings scd="x-schema::">
+        <schemaBindings>
+            <package name="cl.sii"/>
+        </schemaBindings>
+    </bindings>
+</bindings>

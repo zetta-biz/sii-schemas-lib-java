@@ -531,7 +531,7 @@
 			<xs:attribute name="version" type="xs:decimal" use="required" fixed="1.0"/>
 		</xs:complexType>
 	</xs:element>
-	<xs:simpleType name="RUTType">
+	<!--<xs:simpleType name="RUTType">
 		<xs:annotation>
 			<xs:documentation>RUT 99999999-X</xs:documentation>
 		</xs:annotation>
@@ -539,24 +539,24 @@
 			<xs:maxLength value="10"/>
 			<xs:pattern value="[0-9]+-([0-9]|K)"/>
 		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="MontoType">
+	</xs:simpleType>-->
+	<!--<xs:simpleType name="MontoType">
 		<xs:annotation>
 			<xs:documentation>Monto 18  digitos (positivo)</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:nonNegativeInteger">
 			<xs:totalDigits value="18"/>
 		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="ValorType">
+	</xs:simpleType>-->
+	<!--<xs:simpleType name="ValorType">
 		<xs:annotation>
 			<xs:documentation>Monto 18 digitos (positivo o negativo)</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:integer">
 			<xs:totalDigits value="18"/>
 		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="DoctoType">
+	</xs:simpleType>-->
+	<!--<xs:simpleType name="DoctoType">
 		<xs:annotation>
 			<xs:documentation>Tipos de Documentos</xs:documentation>
 		</xs:annotation>
@@ -598,8 +598,8 @@
 			<xs:enumeration value="918"/>
 			<xs:enumeration value="919"/>
 		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="PctType">
+	</xs:simpleType>-->
+	<!--<xs:simpleType name="PctType">
 		<xs:annotation>
 			<xs:documentation>Porcentaje (3 enteros y 2 decimales)</xs:documentation>
 		</xs:annotation>
@@ -609,5 +609,5 @@
 			<xs:minInclusive value="0"/>
 			<xs:maxInclusive value="100"/>
 		</xs:restriction>
-	</xs:simpleType>
+	</xs:simpleType>-->
 </xs:schema>
