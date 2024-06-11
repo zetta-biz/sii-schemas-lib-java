@@ -48,9 +48,21 @@
             <version>${jakarta.annotation.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>${jakarta.xml.bind-api.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.jvnet.jaxb</groupId>
             <artifactId>jaxb-plugins-runtime</artifactId>
             <version>${jaxb.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.datafaker</groupId>
+            <artifactId>datafaker</artifactId>
+            <version>1.9.0</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
