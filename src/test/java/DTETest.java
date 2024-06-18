@@ -1,3 +1,8 @@
+/**
+ * Copyright (C) 2024 Jorge Arias Leal
+ * SPDX-License-Identifier: LGPL-3.0-only OR Zetta-Commercial
+ */
+
 import cl.sii.siidte.DTEDefType;
 import cl.sii.siidte.ObjectFactory;
 import org.junit.jupiter.api.Test;
